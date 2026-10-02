@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { prisma } from "../lib/prisma";
-import { AppError } from "../lib/AppError";
+import { prisma } from "../lib/prisma.js";
+import { AppError } from "../lib/AppError.js";
 
 const getOwnedPost = async (req: Request) => {
     const id = Number(req.params.id);

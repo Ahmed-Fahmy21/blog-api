@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import authRoutes from "./routes/auth.routes";
-import postRoutes from "./routes/post.routes";
-import { notFound, errorHandler } from "./middlewares/error.handler";
+import authRoutes from "./routes/auth.routes.js";
+import postRoutes from "./routes/post.routes.js";
+import { notFound, errorHandler } from "./middlewares/error.handler.js";
 
 const app = express();
 app.use(cors());

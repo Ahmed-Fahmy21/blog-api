@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { prisma } from "../lib/prisma";
-import { AppError } from "../lib/AppError";
+import { prisma } from "../lib/prisma.js";
+import { AppError } from "../lib/AppError.js";
 
 export const register = async (req: Request, res: Response) => {
     const { name, email, password } = req.body;

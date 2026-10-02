@@ -1,10 +1,10 @@
 import { Router } from "express";
 import {
     getPosts, createPost, updatePost, deletePost,
-} from "../controllers/post.controller";
-import { authenticate } from "../middlewares/auth";
-import { validate } from "../middlewares/validate";
-import { postSchema } from "../validators/post.schema";
+} from "../controllers/post.controller.js";
+import { authenticate } from "../middlewares/auth.js";
+import { validate } from "../middlewares/validate.js";
+import { postSchema } from "../validators/post.schema.js";
 
 const router = Router();
 router.get("/", getPosts);
