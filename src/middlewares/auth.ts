@@ -2,6 +2,14 @@ import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import { AppError } from "../lib/AppError";
 
+declare global {
+    namespace Express {
+        interface Request {
+            userId?: number;
+        }
+    }
+}
+
 export const authenticate = (req: Request, _res: Response, next: NextFunction) => {
     const header = req.headers.authorization;
     if (!header?.startsWith("Bearer ")) {
