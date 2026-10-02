@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { AppError } from "../lib/AppError";
+import { AppError } from "../lib/AppError.js";
 
 export const notFound = (_req: Request, res: Response) => {
     res.status(404).json({ error: "Route not found" });
