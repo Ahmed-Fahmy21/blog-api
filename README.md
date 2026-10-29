@@ -2,9 +2,9 @@
 
 A RESTful API where users can register, log in, and manage their own blog posts.
 
-**Tech stack:** Node.js, Express, TypeScript, PostgreSQL, Prisma, JWT, bcrypt, Zod
+**Tech stack:** Node.js, Express, TypeScript, PostgreSQL, Prisma, JWT, bcrypt, Zod, Cors
 
-**Live demo:** `<your-live-demo-link>`
+**Live demo:** `blog-api-eight-psi.vercel.app`
 
 ## Setup and Run Locally
 
